@@ -1,0 +1,10 @@
+{
+  "plugins": ["wdio", "cucumber"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:wdio/recommended",
+    "plugin:cucumber/recommended"
+  ],
+  "parserOptions": { "ecmaVersion": "latest", "sourceType": "module" },
+  "env": { "es6": true, "node": true }
+}
