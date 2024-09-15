@@ -18,6 +18,8 @@ The main objectives of this project are:
 - Test multiple login scenarios using the BDD approach (Cucumber).
 - Generate detailed test reports using Allure.
 
+**Note:** iOS automation is not included as it requires a macOS environment, which is currently not available.
+
 ## Prerequisites
 
 - **Node.js** (version 14 or above)
@@ -30,5 +32,32 @@ The main objectives of this project are:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/nomo-trek.git
+   git clone https://github.com/prakashbsamanta/nomo-trek.git
    ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd nomo-trek
+   ```
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+## Running the Project
+
+1. **Run Tests on Android:**
+   ```bash
+   npm run test:android
+   ```
+   <!-- 2. **Run Tests on iOS:**
+      ```bash
+      npm run test:ios
+      ``` -->
+
+## Generating Allure Reports
+
+**To open the report in a browser:**
+
+```bash
+    npx allure generate allure-results --clean && npx allure open
+```
